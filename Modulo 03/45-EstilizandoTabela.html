@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas - Estilizando Tabelas</title>
+
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 5px solid #333;
+        }
+
+        /* alterando o msm attr de varios seletores */
+        table,tr, td, th{
+            border: 2px solid #333;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table border=1>
+        <thead>
+            <tr>
+                <th rowspan="2">Nome</th>
+                <th rowspan="2">Telefone</th>
+                <th colspan="5">Endereço</th>
+            </tr>
+            <tr>
+                <th>Rua</th>
+                <th>Número</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>CEP</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Pablo Cunha</td>
+                <td>+55 11 901010101</td>
+                <td>Av. Alberto Silva</td>
+                <td>123</td>
+                <td>Nova York</td>
+                <td>NY</td>
+                <td>102495</td>
+            </tr>
+            <tr>
+                <td>Pablo Cunha</td>
+                <td>+55 11 901010101</td>
+                <td>Av. Alberto Silva</td>
+                <td>123</td>
+                <td>Nova York</td>
+                <td>NY</td>
+                <td>102495</td>
+            </tr>
+            <tr>
+                <td>Pablo Cunha</td>
+                <td>+55 11 901010101</td>
+                <td>Av. Alberto Silva</td>
+                <td>123</td>
+                <td>Nova York</td>
+                <td>NY</td>
+                <td>102495</td>
+            </tr>
+            <tr>
+                <td>Pablo Cunha</td>
+                <td>+55 11 901010101</td>
+                <td>Av. Alberto Silva</td>
+                <td>123</td>
+                <td>Nova York</td>
+                <td>NY</td>
+                <td>102495</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="7">Para maiores informações, entre em contato conosco</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
