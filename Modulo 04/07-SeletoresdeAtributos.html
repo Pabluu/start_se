@@ -1,0 +1,63 @@
+<!--
+COMENTÁRIOS
+*Permite realizar anotações no código sem que elas sejam interpretadas
+
+*Os comentários são relizados dentro de blocos: /* */
+
+SELETOR DE ATRIBUTO
+Permite realizar a seleção a partir do valor ou da presença dos atributos.
+
+COMBINANDO SELETORES
+Os seletores de atributos também podem ser combinados com os demais elementos.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Atributos</title>
+    <link rel="stylesheet" href="07-SeletoresdeAtributos.css" />
+</head>
+
+<body>
+    <h1>Meu formulário</h1>
+    <p>Os campos anotados com <span class="obrigatorio">*</span> são obrigatórios</p>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Nome completo" />
+        </div>
+        <div>
+            <label for="mail" class="obrigatorio">E-mail*:</label>
+            <input type="email" id="mail" placeholder="email@mail.com" />
+        </div>
+        <div>
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value="N" selected></option>
+                <option value="S">Sugestão</option>
+                <option value="R">Reclamação</option>
+                <option value="E">Elogio</option>
+            </select>
+        </div>
+        <div>
+            <label for="msg" class="obrigatorio">Mensagem*:</label>
+            <textarea id="msg"></textarea>
+            <p>Tamanho máximo de 100 caracteres</p>
+        </div>
+        <div class="button">
+            <button type="submit">Enviar sua mensagem</button>
+        </div>
+
+        <label>Concordo com os termos de envio!</label>
+
+        <ul>
+            <li><a href="http://utfpr.edu.br">UTFPR</a></li>
+            <li><a href="http://usp.br">USP</a></li>
+            <li><a href="http://unb.edu.br">UNB</a></li>
+        </ul>
+    </form>
+</body>
+
+</html>
