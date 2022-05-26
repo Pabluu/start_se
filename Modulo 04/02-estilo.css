@@ -1,0 +1,18 @@
+body {
+    background-color: brown;
+}
+
+h1 {
+    font-size: 150px;
+    color: #fff;
+}
+
+h1:hover{
+    text-decoration: underline;
+}
+
+p {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
