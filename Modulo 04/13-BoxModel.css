@@ -1,0 +1,8 @@
+div * {
+    border: 5px solid #333;
+    margin: 30px;
+}
+
+mark {
+    margin: 20px;
+}

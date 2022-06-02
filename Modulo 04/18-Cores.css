@@ -1,0 +1,11 @@
+div{
+    width: 380px;
+    height: 300px;
+    background-color: #A9EDBA;
+}
+
+p{
+    width: 380px;
+    height: 300px;
+    background-color: rgba(123, 222, 108, .5);
+}
