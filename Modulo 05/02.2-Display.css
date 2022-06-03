@@ -1,0 +1,17 @@
+.nav li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 600px){
+    .nav li{
+        display: block;
+        padding: 20px;
+    }
+
+    h1{
+        display: none;
+    }
+}
