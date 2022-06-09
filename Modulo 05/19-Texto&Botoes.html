@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto & Botões</title>
+    <link rel="stylesheet" href="19-Texto&Botoes.css">
+</head>
+
+<body>
+    <form action="#" method="get">
+
+        <div>
+            <label for="texto">Texto:</label>
+
+            <textarea id="texto" name="texto" rows="10" cols="60">
+      Era uma vez...
+      </textarea>
+        </div>
+
+
+
+        <div>
+            <label for="isabores">Sabores:</label>
+            <input list="sabores" id="isabores" name="sabores">
+            <datalist id="sabores">
+                <option value="Chocolate">
+                <option value="Coco">
+                <option value="Menta">
+                <option value="Morango">
+                <option value="Baunilha">
+            </datalist>
+
+        </div>
+
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+            <button type="button">Botão genérico</button>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+            <input type="button" value="Botão genérico">
+        </div>
+
+    </form>
+</body>
+
+</html>

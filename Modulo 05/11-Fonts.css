@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+p{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+p.serif{
+    font-family: serif;
+}
+
+p.sans-serif{
+    font-family: sans-serif;
+}
+
+p.monospace{
+    font-family: monospace;
+}
+
+p.cursive{
+    font-family: cursive;
+}
+
+p.fantasy{
+    font-family: fantasy;
+}
