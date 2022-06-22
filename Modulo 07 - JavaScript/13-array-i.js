@@ -19,5 +19,9 @@ let jogadores = [
     {
         nome: 'Gil',
         posicao: 'Zagueiro'
+    },
+    {
+        nome: 'Milton',
+        poscao: 'volante'
     }
 ]
