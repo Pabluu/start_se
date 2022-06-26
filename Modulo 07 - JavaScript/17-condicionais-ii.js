@@ -9,6 +9,7 @@ function media(n1, n2) {
 
 let resultado = media(nota1, nota2);
 
+// operador ternario
 let situacao = resultado >= 6 ? 'Aprovado' :
     resultado >= 4 ? 'Em recuperação' :
         'Reprovado';
@@ -16,9 +17,7 @@ let situacao = resultado >= 6 ? 'Aprovado' :
 console.log(situacao);
 
 
-
 // SWITCH
-
 let opcao = 2;
 
 switch (opcao) {

@@ -1,4 +1,4 @@
-//vars diferentes por causa do case sensitive
+//variaveis com nomes diferentes por causa do case sensitive
 let primeiroNome = 'Pablos';
 let PrimeiroNome = 'Anas';
 
@@ -17,6 +17,7 @@ console.log(soma);
 
 // constante
 const pi = 3.1416
+
 let raio = 3;
 let circuferencia = 2 * pi * raio;
 console.log(circuferencia);

@@ -3,8 +3,8 @@
 // !
 let conectado =  true;
 
-// true
-console.log(conectado);
+
+console.log(conectado);// true
 
 // negando
 console.log(!conectado); //false
@@ -19,7 +19,7 @@ console.log(nota1 !== nota2); //true
 
 
 
-// OPERADORES LÓGICOS BINÁRIOS
+// OPERADORES LÓGICOS
 
 var a = 2;
 let b = 4;
@@ -39,6 +39,7 @@ console.log((d > b) || (c > b));
 // MAIS 1 ++
 var x = 10;
 var a = ++x;
+var a = x++;
 
 
 // OPERADOR DECREMENTAL

@@ -1,6 +1,6 @@
 const cidades = [];
 
-// PUSH - Adiciona um item no final
+// PUSH - Adiciona um(uns) item(ns) no final
 
 cidades.push('Rio', 'São Paulo');
 

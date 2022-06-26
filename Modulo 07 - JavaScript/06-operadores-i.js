@@ -38,23 +38,19 @@ console.log(cor);
 let num = 3;
 console.log(num *= 2);
 
-// elevar a si mesmo *=
+// elevar a si mesmo **=
 let num1 = 3;
 console.log(num1 **= 2);
 
-// dividir  a si mesmo *=
+// dividir  a si mesmo /=
 let num2 = 3;
 console.log(num2 /= 2);
 
-// dividir  a si mesmo *=
-let num3 = 3;
-console.log(num3 /= 2);
-
-// somar  a si mesmo *=
+// somar  a si mesmo +=
 let num4 = 3;
 console.log(num4 += 2);
 
-// subtrair  a si mesmo *=
+// subtrair  a si mesmo -=
 let num5 = 3;
 console.log(num5 -= 2);
 
@@ -76,7 +72,7 @@ console.log(b <= 21); //true
 
 
 
-// OPERADORES DE IGUALDADE
+// OPERADORES DE IGUALDADE(COMPARAÇÃO)
 var nota1 = 8;
 var nota2 = '8';
 
