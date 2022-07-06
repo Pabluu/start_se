@@ -19,10 +19,31 @@ input::placeholder {
 
 h2 {
     text-transform: uppercase;
-    font-size: 20px;
-    text-decoration: underline wavy #eb5600 3px;
+    font-size: 35px;
+    text-align: center;
 }
 
 span {
     vertical-align: text-top;
+}
+
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 10px 15px;
+}
+
+table, tr {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+tbody tr:hover{
+    background-color: #33333325;
+}
+
+thead tr:hover{
+    background-color: #33333375;
 }
