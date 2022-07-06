@@ -42,10 +42,14 @@ export class Financiamento {
 
         for (const parcela of parcelas) {
             const linha = corpoTabela.insertRow(-1);
-            for(const dado of parcela.getDadosFormatador()){
+            for (const dado of parcela.getDadosFormatador()) {
                 const celula = linha.insertCell(-1);
                 celula.textContent = dado;
             }
         }
+    }
+
+    getParcelas() {
+        return this.#parcelas;
     }
 }
