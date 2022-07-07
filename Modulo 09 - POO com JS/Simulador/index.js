@@ -12,7 +12,7 @@ const textoPrazo = document.querySelector('#textoPrazo');
 
 function limpaCorpoTabela() {
     while (corpoTabela.firstChild) {
-        corpoTabela.removeChild();
+        corpoTabela.removeChild(corpoTabela.firstChild);
     }
 }
 
@@ -35,11 +35,9 @@ botaoCalcular.addEventListener('click', function () {
 
     let simulacao;
     if (comCarencia.checked) {
-        console.log("clicou");
         const carencia = parseInt(listaSuspensa.value);
         simulacao = new FinanciamentoCarencia(valor, entrada, taxaJuros, prazo, carencia);
     } else {
-        console.log("não clicou");
         simulacao = new Financiamento(valor, entrada, taxaJuros, prazo);
     }
     simulacao.calcParcelasMensais();

@@ -10,39 +10,68 @@
 </head>
 
 <body>
-    <h2>Simualdor de Financiamento com sistema de Amortização Constante(SAC)</h2>
+    <header>
+        <h1>Simualdor de Financiamento com sistema de Amortização Constante(SAC)</h1>
+    </header>
 
-    <input id='textoValor' type="text" placeholder='Valor do Bem'>
-    <input id='textoEntrada' type="text" placeholder='Valor da Entrada'>
-    <input id='textoTaxaJuros' type="text" placeholder='taxa de Juros(%)'>
-    <input id='textoPrazo' type="text" placeholder='Prazo(em meses)'>
+    <main id="container">
 
-    <button id="botaoCalcular">Calcular</button>
-    <label for="comCarencia">Com Carência ?</label>
-    <input type="checkbox" id="comCarencia">
+        <section id="entradas">
+            <section id="vEmprestimo">
+                <label for="textoValor">Valor do Empréstimo</label>
+                <input id='textoValor' type="text">
+            </section>
 
-    <select name="" id="listaSuspensa" hidden>
-        <option value="2">2 Meses</option>
-        <option value="3">3 Meses</option>
-        <option value="4">4 Meses</option>
-    </select>
+            <section id="vEntrada">
+                <label for="textoEntrada">Valor da Entrada</label>
+                <input id='textoEntrada' type="text">
+            </section>
 
-    <p></p>
-    <table>
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>Valor da Parcela</th>
-                <th>Amortização</th>
-                <th>Juros</th>
-                <th>Saldo Devedor</th>
-            </tr>
-        </thead>
+            <section id="vJuros">
+                <label for="textoTaxaJuros">taxa de Juros(%)</label>
+                <input id='textoTaxaJuros' type="text">
+            </section>
 
-        <tbody id="corpoTabela">
+            <section id="vPrazo">
+                <label for="textoPrazo">Prazo(em meses)</label>
+                <input id='textoPrazo' type="text">
+            </section>
 
-        </tbody>
-    </table>
+            <section id="carencia">
+                <label for="comCarencia">Com Carência ?</label>
+                <div id="cont-carencia">
+                    <input type="checkbox" id="comCarencia">
+                    <select name="" id="listaSuspensa" hidden>
+                        <option value="2">2 Meses</option>
+                        <option value="3">3 Meses</option>
+                        <option value="4">4 Meses</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <button id="botaoCalcular">Calcular</button>
+            </section>
+        </section>
+
+        <section id="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Valor da Parcela</th>
+                        <th>Amortização</th>
+                        <th>Juros</th>
+                        <th>Saldo Devedor</th>
+                    </tr>
+                </thead>
+
+                <tbody id="corpoTabela">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
 
     <script type='module' src="index.js"></script>
 </body>

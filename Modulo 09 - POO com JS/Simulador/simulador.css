@@ -1,25 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+::selection {
+    background-color: #eb560080;
+    /* color: white; */
+}
+
 body {
     background: #fefefe;
     color: #333;
-    font: 11pt Tahoma;
+    font: 18px 'Poppins';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    row-gap: 50px;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+label {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+label:hover {
+    text-decoration: underline 2px;
+}
+
+input {
+    font-size: 17px;
 }
 
 input[type='text'] {
     display: block;
-    height: 35px;
     border-radius: 6px;
-    border: 1px solid #eb5600;
+    border: 1px solid #EB5600;
     text-align: center;
     margin-bottom: 10px;
+    width: 35%;
+    height: 35px;
 }
 
-input::placeholder {
-    text-transform: capitalize;
+input[type='checkbox'] {
+    height: 25px;
+    width: 25px;
 }
 
-h2 {
+input:focus {
+    outline-color: #EB5600;
+}
+
+h1 {
+    font-size: 30px;
     text-transform: uppercase;
-    font-size: 35px;
     text-align: center;
 }
 
@@ -27,24 +65,69 @@ span {
     vertical-align: text-top;
 }
 
-
-table,
-th,
-td {
-    border-collapse: collapse;
-    padding: 10px 15px;
+span>* {
+    height: 30px;
 }
 
-table,
-tr {
-    border: 2px solid #ccc;
+#carencia,
+#cont-carencia {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+#carencia:checked {
+    background-color: green;
+}
+
+#cont-carencia {
+    column-gap: 20px;
+}
+
+select {
+    height: 30px;
+    padding-inline: 20px;
+    border: 1px solid #EB5600;
     border-radius: 5px;
+    background-color: transparent;
+}
+
+button {
+    padding-inline: 20px;
+    height: 35px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 25%;
+}
+
+button:hover,
+select:hover {
+    background: #EB560050;
+    border: 1px solid #EB5600;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+thead th{
+    text-transform: uppercase;
+    border-bottom: 3px solid #333;
+}
+
+th,
+td {
+    padding: 1em;
+    background: #ddd;
+    border-bottom: 2px solid white;
+}
+
+tbody>tr:nth-child(odd) {
+    background: #33333315;
 }
 
 tbody tr:hover {
-    background-color: #33333325;
-}
-
-thead tr:hover {
-    background-color: #33333375;
+    background-color: #33333335;
 }
