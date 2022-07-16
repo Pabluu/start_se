@@ -1,0 +1,21 @@
+div {
+  /* box-sizing: border-box; */
+  background-color: #eb5600;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  padding: 75px;
+  border: 30px solid #333;
+}
+
+/* div#dois {
+  background-color: #eb5600;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 1em;
+  font-size: 30px;
+  
+} */

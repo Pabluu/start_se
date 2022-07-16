@@ -1,0 +1,26 @@
+/* As regras são declarações em css usando o prefixo "@"
+
+@charset: Utilizada para a codificação de caracteres utilizados na folha de estilo
+
+@import: Utilizada para importar regras de outros arquivos CSS
+
+@media: Utilizado para restringir o escopo das folhas de estilo. Podem também ser aplicados a diferentes dispostivos(Celular, Tablets, Monitor...)
+*/
+@import url('01-test.css');
+
+body {
+    background-color: red;
+}
+
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: blue;
+    }
+}

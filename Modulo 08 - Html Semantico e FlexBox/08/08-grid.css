@@ -1,0 +1,12 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.wrapper > *{
+    border: 2px solid orange;
+    background-color: rgba(255, 166, 0, 0.507);
+    margin: 2px;
+    padding: 10px 5px;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a::after{
+    
+}
+
+/* link não visitado */
+a:link {
+    font-size: 50px;
+}
+
+
+/* mouse sobre o link */
+a:hover,
+h1:hover {
+    background-color: yellowgreen;
+}
+
+/* link já foi visitado */
+a:visited {
+    color: rebeccapurple;
+}
+
+/* link selecionado */
+a:active {
+    color: p
+}
+
+input:hover,
+textarea:hover {
+    background: green;
+}
+
+/* quando o elemento recebe um focus */
+input:focus,
+textarea:focus {
+    background-color: yellow;
+}
+
+#meuslinks li:first-child {
+    background: red;
+}
