@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+*{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
 body {
   /* background: #efefbb; */
   background: linear-gradient(to right, rgb(242, 238, 6), rgb(203, 18, 18));
@@ -14,6 +21,10 @@ body {
 h1 {
   text-align: center;
   font-size: 54px;
+}
+
+h1::selection{
+  background-color: rgba(245, 245, 245, 0.363);
 }
 
 .pokedex {
@@ -35,8 +46,8 @@ h1 {
 .card::after {
   content: "";
   display: block;
-  width: 50%;
-  height: 45%;
+  width: 20%;
+  height: 20%;
   border-radius: 100%;
   background-color: #fff;
   opacity: 0.7;
